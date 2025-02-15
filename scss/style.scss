@@ -1,0 +1,53 @@
+@use 'load_fonts';
+@use 'null';
+@use 'container';
+@use 'menu';
+@use 'slider';
+
+
+.body {
+  width: 100vw;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+
+  &__logo {
+    color: black;
+    font-weight: 800;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    text-decoration: none;
+  }
+
+  &__menu {
+    display: inline-block;
+  }
+}
+
+.hero {
+  position: relative;
+  max-height: 800px;
+  // background-image: url('../images/bg_architucture.jpg');
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // min-height: 800px;
+
+  &__main {
+    max-width: 50%;
+    margin: 5em 0;
+  }
+  
+  &__title {
+    font-size: 3em;
+  } 
+
+  &__text {
+    margin: 1rem 0;
+  }
+}
+
